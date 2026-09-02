@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="addTabindex()">
+
+    <h1>Thư Viện Ảnh Tương Tác</h1>
+
+    <!-- Khung hiển thị ảnh lớn -->
+    <div id="image">
+        Rê chuột hoặc dùng phím Tab để chọn ảnh bên dưới.
+    </div>
+
+    <!-- Danh sách 6 ảnh xem trước -->
+    <div class="gallery">
+        <img class="preview" 
+             src="https://picsum.photos/id/10/600/400" 
+             alt="Cảnh thiên nhiên rừng cây xanh mát" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/11/600/400" 
+             alt="Ngọn núi hùng vĩ mây phủ" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/12/600/400" 
+             alt="Bãi biển hoàng hôn bình yên" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/13/600/400" 
+             alt="Bờ biển đá sóng vỗ" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/14/600/400" 
+             alt="Bờ biển vắng trải dài" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             src="https://picsum.photos/id/15/600/400" 
+             alt="Cảnh thác nước tuyệt đẹp" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+    </div>
+
+</body>
+</html>
